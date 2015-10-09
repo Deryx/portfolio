@@ -1,0 +1,412 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 72px;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    position: fixed;
+    z-index: 100;
+    color: #22313F;
+}
+
+header h1 {
+    margin-left: 40px;
+    margin-top: 12px;
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    text-align: center;
+    color: #000;
+    font-size: 3.5em;
+    background: #F9BF3B;
+    font-weight: 700;
+    font-family: 'Montseerat', sans-serif;
+}
+
+header h1:nth-of-type(2) {
+    margin-left: 0;
+}
+
+/*
+header h1 {
+    margin-left: 40px;
+    float: left;
+    text-transform: uppercase;
+    color: #F9BF3B;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+}
+*/
+
+header nav {
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-table;
+}
+
+header ul li a {
+    text-transform: uppercase;
+    padding: 9px 8px;
+    text-decoration: none;
+    color: #F9BF3B;
+    font-family: 'lato', sans-serif;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 72px;
+    background: #ECF0F1;
+    display: none;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    clear: both;
+    float: right;
+    overflow: hidden;
+}
+
+section div.content {
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 25px;
+    width: 940px;
+    clear: both;
+}
+
+section div h1 {
+    margin-top: 8%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+#introduction {
+    background-size: cover;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#about, #skills, #portfolio, #contact, #backend, #miscellaneous {
+    display: none;
+}
+
+#about {
+    background-size: cover;
+    background-image: url(../images/stanford.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#about .background {
+    background: rgba(211, 84, 0, 0.9);
+    height: 100%;
+}
+
+#about div.content h1 {
+    color: #FFF;
+}
+
+#about div.content h1 + p {
+    margin-top: 30px;
+}
+
+#about div.content h1 ~ p {
+    font-family: "Roboto Slab";
+    text-align: justify;
+    font-size: 1.2em;
+    color: #FFF;
+}
+
+#skills {
+    background-size: cover;
+    background-image: url(../images/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#skills .background {
+    background: rgba(65, 131, 215, 0.85);
+    height: 100%;
+}
+
+#skills h1 {
+    color: #FFF;
+}
+
+#skill-levels {
+    margin-top: 5%;
+    width: 100%;
+}
+
+#buttons {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#buttons button {
+    display: inline-table;
+    width: 120px;
+}
+
+#skill-levels h4 {
+    text-align: left;
+}
+
+#skill-levels section {
+    width: 100%;
+}
+
+#skill-levels dl {
+    margin: 0;
+    margin-top: -12px;
+    padding: 0;
+    border-bottom: 1px solid #000;
+    clear: both;
+}
+
+#skill-levels dl:nth-of-type(1) dd {
+    text-align: right;
+}
+
+#skill-levels dd {
+    display: inline-table;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    margin-left: -3px;
+    width: 16%;
+    height: 20px;
+}
+
+#skill-levels dd:first-child {
+    width: 16%;
+    border: none;
+    height: 25px;
+    margin-left: 10px;
+}
+
+#skill-levels dd h3 {
+    margin-top: -5px;
+    text-transform: uppercase;
+    padding: 5px;
+    display: inline-table;
+    background: #000;
+    color: #FFF;
+    font-size: 1em;
+    text-align: right;
+}
+
+#skill-levels dd:first-child h4 {
+    width: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #000;
+    color: #FFF;
+    font-size: 1em;
+    text-align: center;
+}
+
+#skill-levels dd div {
+    margin-bottom: -7px;
+    padding: 0;
+    height: 25px;
+    background: #000;
+}
+
+#backend, #miscellaneous {
+    display: none;
+}
+
+#portfolio {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#portfolio h1 {
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+#portfolio .background {
+    background: rgba(77, 175, 124, 0.9);
+    height: 100%;
+}
+
+#portfolio .slide-viewer {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 550px;
+    height: 550px;
+}
+
+#portfolio .slide-group {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#portfolio .slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+}
+
+#portfolio .slide:first-child {
+    display: block;
+}
+
+#portfolio .row {
+    width: 100%;
+    margin-left: 5px;
+}
+
+#portfolio .column {
+    width: 225px;
+    height: 225px;
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden;
+}
+
+#portfolio .column img {
+    width: 225px;
+    -moz-box-shadow: 0 0 10px #000000;
+    -webkit-box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px #000000;
+}
+
+.column > .overlay {
+    width: 225px;
+    height: 112px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 99;
+    margin-top: -112px;
+    display: none;
+}
+
+.column > .overlay h4 {
+    color: #FFF;
+    text-align: center;
+}
+
+div.slide-buttons {
+    margin: 0 auto;
+    position: absolute;
+    width: 940px;
+    left: 50%;
+    margin-left: -490px;
+    margin-top: -60px;
+    text-align: center;
+    z-index: 99;
+}
+
+div.slide-buttons button {
+    border: none;
+    background: none;
+}
+
+.slide-btn {
+    font-size: 3em;
+}
+
+.active {
+    color: #FF0000;
+}
+
+#contact {
+    background-size: cover;
+    background-image: url(../images/new.york.city.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#contact .background {
+    background: rgba(242, 38, 19, 0.9);
+    height: 100%;
+}
+
+#contact h1 {
+    color: #FFF;
+}
+
+.hidden {
+    display: none;
+}
+
+.arrow-nav {
+    width: 150px;
+    height: 50px;
+    font-size: 2em;
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+}
+
+#introduction .arrow-nav .glyphicon-chevron-left {
+    visibility: hidden;
+}
+
+#introduction .arrow-nav .glyphicon-chevron-right {
+    margin-left: 55px;
+}
+
+#contact .arrow-nav .glyphicon-chevron-left {
+    margin-left: 55px;
+}
+
+.arrow-nav span {
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background: #000;
+}
+
+.arrow-nav span:nth-of-type(1) {
+    margin-right: 5px;
+}
+
+div.progress-bar {
+    width: 100%;
+    height: 25px;
+    background: #000;
+}
