@@ -6,12 +6,22 @@ $( function() {
     var sectionHeight = $(document).height();
     var sectionWidth = $(window).width;
 
-    $( '#introduction, #about, #skills, #portfolio, #contact' ).css( 'height', sectionHeight );
+    $( '#introduction, #about, #skills, #portfolio, #contact, #site-overlay' ).css( 'height', sectionHeight );
 
-    $('a').on( 'click', function() {
+    $('header nav a').on( 'click', function() {
         $( 'section:visible' ).animate( { width: 'hide' }, 1000 );
         var $newPage = $(this).attr('href');
         $( 'section' + $newPage ).animate( { width: 'show' }, 1000 );
+    });
+
+    $( 'div.page-arrow span[class*="glyphicon-chevron-left"]' ).on( 'click', function() {
+        var $pressedArrow = this;
+        executeArrow.call( this, $pressedArrow );
+    });
+
+    $( 'div.page-arrow span[class*="glyphicon-chevron-right"]' ).on( 'click', function() {
+        var $pressedArrow = this;
+        executeArrow.call( this, $pressedArrow );
     });
 
     $('.slide-viewer').each(function() {
@@ -72,21 +82,11 @@ $( function() {
         });
     });
 
-    $( 'div.arrow-nav span[class*="glyphicon-chevron-left"]' ).on( 'click', function() {
-        var $pressedArrow = this;
-        executeArrow.call( this, $pressedArrow );
-    });
-
-    $( 'div.arrow-nav span[class*="glyphicon-chevron-right"]' ).on( 'click', function() {
-        var $pressedArrow = this;
-        executeArrow.call( this, $pressedArrow );
-    });
-
     $( '#buttons button' ).on( 'click', function() {
         var $currentSV = $( '#skill-levels > div:visible' );
         $currentSV.hide();
         var $showSection = $( this ).attr( 'id' );
-        $( 'div#' + $showSection ).show();
+        $( 'div#' + $showSection ).slideDown(3000);
     });
 
     $( '.column' ).hover(function() {
@@ -96,6 +96,23 @@ $( function() {
     }, function() {
         $( '.overlay:visible' ).slideUp( 1000 );
     });
+
+    $( '[class*=btn-info]' ).on( 'click', function() {
+        var $button = $( this );
+        var buttonID = $button.attr( 'id' );
+        $( '#site-overlay' ).show();
+        $( '#lightbox-' + buttonID ).show();
+    })
+
+    $( '#site-overlay' ).on( 'click', function() {
+        $( this ).hide();
+        $( '[id*=lightbox]' ).hide();
+    });
+
+    $( '[class*=glyphicon-remove]' ).on( 'click', function() {
+        $( '#site-overlay' ).hide();
+        $( '[id*=lightbox]' ).hide();
+    });
 });
 
 function executeArrow(pressedArrow) {
@@ -104,13 +121,21 @@ function executeArrow(pressedArrow) {
     var $forwardArrow = 'glyphicon glyphicon-chevron-right';
     var $backArrow = 'glyphicon glyphicon-chevron-left';
 
-    $current.animate({ width: 'hide' }, 2000);
-
     if ( $pressedArrow === $forwardArrow ) {
         var $next = $current.next();
-        $next.animate( { width: 'show' }, 2000 );
+        if($next.attr('class') === 'page') {
+            $current.hide().removeClass('animated slideInLeft');
+            $next.show().addClass('animated slideInLeft');
+            $current.removeClass('animated slideInRight');
+            $current.removeClass('animated slideInLeft');
+        }
     } else if ( $pressedArrow === $backArrow ) {
         var $previous = $current.prev();
-        $previous.animate( { width: 'show' }, 2000 );
+        if($previous.attr('class') === 'page') {
+            $current.hide().removeClass('animated slideInRight');
+            $previous.show().addClass('animated slideInRight');
+            $current.removeClass('animated slideInLeft');
+            $current.removeClass('animated slideInRight');
+        }
     }
 }

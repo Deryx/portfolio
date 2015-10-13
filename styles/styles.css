@@ -5,10 +5,13 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather);
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 header {
@@ -29,13 +32,13 @@ header h1 {
     float: left;
     height: 50px;
     width: 50px;
+    padding-top: 10px;
     border-radius: 100px;
     text-align: center;
     color: #000;
-    font-size: 3.5em;
+    font-size: 2em;
     background: #F9BF3B;
-    font-weight: 700;
-    font-family: 'Montseerat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 header h1:nth-of-type(2) {
@@ -53,6 +56,16 @@ header h1 {
     font-size: 3em;
 }
 */
+
+#site-overlay {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
 
 header nav {
     float: right;
@@ -116,7 +129,7 @@ section div h1 {
     background-position: center;
 }
 
-#about, #skills, #portfolio, #contact, #backend, #miscellaneous {
+#about, #skills, #portfolio, #contact, #frontend, #backend, #miscellaneous  {
     display: none;
 }
 
@@ -303,9 +316,6 @@ section div h1 {
 
 #portfolio .column img {
     width: 225px;
-    -moz-box-shadow: 0 0 10px #000000;
-    -webkit-box-shadow: 0 0 10px #000000;
-    box-shadow: 0 0 10px #000000;
 }
 
 .column > .overlay {
@@ -316,11 +326,14 @@ section div h1 {
     z-index: 99;
     margin-top: -112px;
     display: none;
+    text-align: center;
 }
 
 .column > .overlay h4 {
     color: #FFF;
     text-align: center;
+    clear: both;
+    margin-bottom: 20px;
 }
 
 div.slide-buttons {
@@ -390,23 +403,104 @@ div.slide-buttons button {
     margin-left: 55px;
 }
 
-.arrow-nav span {
-    padding-top: 10px;
-    width: 50px;
-    height: 50px;
-    float: left;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    border-radius: 100px;
-    background: #000;
+[id*=lightbox] {
+    padding: 0;
+    width: 940px;
+    height: 100%;
+    position: absolute;
+    margin-left: -470px;
+    left: 50%;
+    z-index: 100;
+    display: none;
+    background: #FFF;
+    overflow: auto;
 }
 
-.arrow-nav span:nth-of-type(1) {
-    margin-right: 5px;
+[id*=lightbox] h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+[id*=lightbox] > .row > .col-md-4 {
+    border-right: 1px solid #000;
+}
+
+[id*=lightbox] > div span {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    padding-top: 5px;
+    padding-left: 5px;
+    background: #000;
+    color: #FFF;
+    position: absolute;
+    z-index: 102;
+    top: 0.5%;
+    left: 96%;
+    border: 3px solid #FFF;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    2px 2px 2px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         2px 2px 2px 0px rgba(50, 50, 50, 0.75);
+}
+
+div.page-arrow {
+    position: absolute;
+    z-index: 103;
+    width: 150px;
+    color: #FFF;
+    font-size: 3em;
+    top: 50%;
+    background: #000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding-left: 8px;
+    padding-top: 4px;
+}
+
+div.page-arrow:nth-of-type(1) {
+    margin-left: 2%;
+}
+
+div.page-arrow:nth-of-type(2) {
+    margin-left: 93%;
 }
 
 div.progress-bar {
     width: 100%;
     height: 25px;
     background: #000;
+}
+
+[id*=lightbox] h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-left: 40px;
+}
+
+dl {
+    margin-left: 40px;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+dt, dd {
+    float: left;
+}
+
+dd {
+    padding-bottom: 10px;
+}
+
+.col-md-8 p {
+    margin-right: 40px;
+    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
 }

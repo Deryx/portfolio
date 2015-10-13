@@ -34,18 +34,22 @@
     </nav>
 </header>
 
-<section id="introduction">
+<div class="page-arrow">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+</div>
+<div class="page-arrow">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+</div>
+
+<section class="page" id="introduction">
     <div class="content">
         <h1 class="hidden">Introduction</h1>
         <div>
         </div>
-        <div class="arrow-nav">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </div>
     </div>
 </section>
 
-<section id="about">
+<section class="page" id="about">
     <div class="background">
         <div class="content">
             <h1>about me</h1>
@@ -65,16 +69,11 @@
                 professional, symmetrical and attractive. Web development also demands that I continually learn new
                 technologies.</p>
 
-            <div class="arrow-nav">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </div>
-
         </div>
     </div>
 </section>
 
-<section id="skills">
+<section class="page" id="skills">
     <div class="background">
         <div class="content">
             <h1>skills</h1>
@@ -534,15 +533,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="arrow-nav">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </div>
     </div>
 </section>
 
-<section id="portfolio">
+<section class="page" id="portfolio">
     <div class="background">
         <div class="content">
             <h1>portfolio</h1>
@@ -552,15 +546,17 @@
                     <div class="slide slide-1">
                         <div class="row">
                             <div class="column">
-                                <img src="images/spanish-tutor.png" alt="CNR Course Schedule" />
+                                <img src="images/spanish-tutor.png" alt="My Spanish Tutor" />
                                 <span class="overlay">
                                     <h4>My Spanish Tutor</h4>
+                                    <a href="#" class="btn btn-info" id="1" role="button">more detail</a>
                                 </span>
                             </div>
                             <div class="column">
-                                <img src="images/price-calculator.png" alt="CNR Course Schedule" />
+                                <img src="images/price-calculator.png" alt="Net Price Calculator" />
                                 <span class="overlay">
                                     <h4>Net Price Calculator</h4>
+                                    <a href="#" class="btn btn-info" id="2" role="button">more detail</a>
                                 </span>
                             </div>
                         </div>
@@ -570,12 +566,14 @@
                                 <img src="images/course-schedule.png" alt="CNR Course Schedule" />
                                 <span class="overlay">
                                     <h4>CNR Course Schedule</h4>
+                                    <a href="#" class="btn btn-info" id="3" role="button">more detail</a>
                                 </span>
                             </div>
                             <div class="column">
                                 <img src="images/work-request.png" alt="CNR Work Request" />
                                 <span class="overlay">
                                     <h4>CNR Work Request App</h4>
+                                    <a href="#" class="btn btn-info" id="4" role="button">more detail</a>
                                 </span>
                             </div>
                         </div>
@@ -587,27 +585,31 @@
                                 <img src="images/patricia-tenemille.png" alt="Elect Patricia Brimais-Tenemille" />
                                 <span class="overlay">
                                     <h4>Patricia Brimais-Tenemille</h4>
+                                    <a href="#" class="btn btn-info" id="5" role="button">more detail</a>
                                 </span>
                             </div>
                             <div class="column">
-                                <img src="images/gpa-calculator.png" alt="Net Price Calculator" />
+                                <img src="images/gpa-calculator.png" alt="GPA Calculator" />
                                 <span class="overlay">
                                     <h4>GPA Calculator</h4>
+                                    <a href="#" class="btn btn-info" id="6" role="button">more detail</a>
                                 </span>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="column">
-                                <img src="images/grants-portal.png" alt="CNR Course Schedule" />
+                                <img src="images/grants-portal.png" alt="CNR Grants Portal" />
                                 <span class="overlay">
                                     <h4>CNR Grants Portal</h4>
+                                    <a href="#" class="btn btn-info" id="7" role="button">more detail</a>
                                 </span>
                             </div>
                             <div class="column">
-                                <img src="images/off-campus-employment.png" alt="CNR Work Request" />
+                                <img src="images/off-campus-employment.png" alt="CNR Campus Employment" />
                                 <span class="overlay">
                                     <h4>CNR Off-campus Employment App</h4>
+                                    <a href="#" class="btn btn-info" id="8" role="button">more detail</a>
                                 </span>
                             </div>
                         </div>
@@ -616,31 +618,35 @@
                     <div class="slide slide-3">
                         <div class="row">
                             <div class="column">
-                                <img src="images/daily-lent-reflection-archive.png" alt="Elect Patricia Brimais-Tenemille" />
+                                <img src="images/daily-lent-reflection-archive.png" alt="CNR Lent Reflections" />
                                 <span class="overlay">
                                     <h4>CNR Daily Lent Reflection</h4>
+                                    <a href="#" class="btn btn-info" id="9" role="button">more detail</a>
                                 </span>
                             </div>
                             <div class="column">
-                                <img src="images/lap-contract.png" alt="Net Price Calculator" />
+                                <img src="images/lap-contract.png" alt="SNR LAP Contract" />
                                 <span class="overlay">
                                     <h4>SNR LAP Contract</h4>
+                                    <a href="#" class="btn btn-info" id="10" role="button">more detail</a>
                                 </span>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="column">
-                                <img src="images/shopping-list.png" alt="CNR Course Schedule" />
+                                <img src="images/shopping-list.png" alt="Shopping List" />
                                 <span class="overlay">
                                     <h4>Shopping List</h4>
+                                    <a href="#" class="btn btn-info" id="11" role="button">more detail</a>
                                 </span>
                             </div>
                             <div class="column">
-                                <img src="images/hot-cold-game.png" alt="CNR Work Request" />
+                                <img src="images/hot-cold-game.png" alt="Hot/Cold Game" />
 
                                 <span class="overlay">
                                     <h4>Hot/Cold Game</h4>
+                                    <a href="#" class="btn btn-info" id="12" role="button">more detail</a>
                                 </span>
                             </div>
                         </div>
@@ -648,25 +654,312 @@
                 </div>
             </div>
             <div class="slide-buttons"></div>
-
-            <div class="arrow-nav">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </div>
         </div>
     </div>
 </section>
 
-<section id="contact">
+<section class="page" id="contact">
     <div class="background">
         <div class="content">
             <h1>contact</h1>
-            <div class="arrow-nav">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </div>
         </div>
     </div>
 </section>
+
+<!-- Background for lightbox -->
+<div id="site-overlay"></div>
+
+<!-- Lightbox content -->
+<div id="lightbox-1">
+    <h2>case study: my spanish tutor</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>personal</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd></dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd>http://deryx.github.io/spanish-tutor</dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p>My Spanish Tutor came about because I wanted to further learn how to program in AngularJS. This was my second foray into Angular programming.</p>
+            <p>I had been teaching myself Spanish for a while and I wanted a somewhat fun vehicle to continue my Spanish/Angular learning. I created <strong>flashcards</strong> to learn vocabulary and verb conjugation; a <strong>vocabulary slider</strong> game where you slide spanish word tiles to their corresponding images and english definitions; a <strong>word scramble game</strong> where a jumbled spanish word is presented and it is your job to correctly unscramble the word; a <strong>word completion game</strong> where you are presented with incomplete spanish words and it is your job to fill in the blanks; and finally, a <strong>verb conjugator game</strong> where you are presented with with a spanish verb and you have to conjugate the verb in the <strong>present</strong>, <strong>preterite</strong>, <strong>imperfect</strong> or <strong>future</strong> tenses (you choose).</p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
+<div id="lightbox-2">
+    <h2>case study: net price calculator</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>personal</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd>HTML5, CSS3, AngularJS, jQuery, jQueryUI, JSON</dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd>http://deryx.github.io/npc</dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p>After doing some fairly rudimentary programming in AngularJS, I decided it was time to create something a bit larger in scope. I had already created the Net Price Calculator for my employer using ASP.NET (C#), HTML, CSS, jQuery, Bootstrap and XML. Since I was not saving or working with any sensitive data, I did not need a server to store or retrieve data. Therefore, this was a perfect project to use AngularJS since everything is done on the client.</p>
+            <p>The application is essentially a wizard program, taking the user through 5 screens, if the student is independent, or 6 screens, if the student is dependent. The final screen is always the results. The application calculates a student's estimated family contribution (efc) using the Federal Methodology, the same methodology used when a student completes the Free Application for Federal Student Aid (FAFSA).</p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
+<div id="lightbox-3">
+    <h2>case study: cnr course schedule</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>The College of New Rochelle</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd>HTML5, CSS3, ASP.NET Web Forms, C#, DB2, SQL</dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd></dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
+<div id="lightbox-4">
+    <h2>case study: cnr work order request app</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>The College of New Rochelle</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd>HTML5, CSS3, ASP.NET Web Forms, C#, Active Directory, SQL Server, SQL</dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd></dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
+<div id="lightbox-5">
+    <h2>case study: patricia brimais-tenemille</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>Patricia Brimais-Tenemille</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd>HTML5, CSS3</dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd>http://deryx.github.io/patriciatennemille/</dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
+<div id="lightbox-6">
+    <h2>case study: gpa calculator</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>The College of New Rochelle</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd>HTML, CSS, ASP.NET, C#, Active Directory, DB2, SQL</dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd></dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
+<div id="lightbox-7">
+    <h2>case study: cnr grant portal</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>The College of New Rochelle</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd>HTML5, CSS3, ASP.NET, C#, SQL Server, SQL</dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd></dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
+<div id="lightbox-8">
+    <h2>case study: cnr off-campus employment app</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>The College of New Rochelle</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd>HTML5, CSS3, ASP.NET Web Forms, C#, SQL Server, SQL</dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd></dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
+<div id="lightbox-9">
+    <h2>case study: cnr daily lent reflections</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>The College of New Rochelle</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd>HTML, CSS, ASP.NET Web Forms, C#, SQL Server, SQL</dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd></dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
+<div id="lightbox-10">
+    <h2>case study: snr life arts project contract app</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>The College of New Rochelle</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd>HTML5, CSS3, jQuery, Bootstrap, ASP.NET Web Forms, C#, SQL Server, SQL</dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd></dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
+<div id="lightbox-11">
+    <h2>case study: shopping list</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>personal</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd>HTML5, CSS3, jQuery, JavaScript</dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd>http://deryx.github.io/shopping-list/</dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
+<div id="lightbox-12">
+    <h2>case study: hot/cold game</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>specs</h3>
+            <dl>
+                <dt>company: </dt>
+                <dd>personal</dd>
+            </dl>
+            <dl>
+                <dt>technology: </dt>
+                <dd>HTML5, CSS3, jQuery, JavaScript</dd>
+            </dl>
+            <dl>
+                <dt>website: </dt>
+                <dd>http://deryx.github.io/hot-cold-game/</dd>
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+        </div>
+    </div>
+    <div><span class="glyphicon glyphicon-remove"></span></div>
+</div>
 
 <!-- Javascript -->
 <script src="scripts/portfolio.js"></script>
