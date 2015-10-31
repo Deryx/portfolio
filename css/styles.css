@@ -572,6 +572,7 @@ div.slide-buttons button {
 
 [id*=lightbox] .col-md-8 p {
     margin-right: 40px;
+    font-size: 1.1em;
     text-align: left;
     font-family: 'Source Sans Pro', sans-serif;
     padding-left: 30px;
