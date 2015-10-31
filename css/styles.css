@@ -388,6 +388,46 @@ div.slide-buttons button {
     color: #FFF;
 }
 
+#contact .row {
+    width: 75%;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 18%;
+    text-align: center;
+}
+
+#contact .row div {
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    background: #0000FF;
+    display: inline-block;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 10px;
+}
+
+#contact i {
+    padding-top: 30px;
+    font-size: 6em;
+}
+
+#contact a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    background: #FFF;
+    color: #0000FF;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 10px;
+}
+
 .hidden {
     display: none;
 }
