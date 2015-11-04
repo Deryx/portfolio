@@ -205,6 +205,19 @@ section div h1 {
 #buttons button {
     display: inline-table;
     width: 120px;
+    text-transform: uppercase;
+    width: 150px;
+    font-weight: bold;
+}
+
+#skill-levels h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    padding-top: 40px;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
 }
 
 #skill-levels h4 {
@@ -253,6 +266,7 @@ section div h1 {
     color: #FFF;
     font-size: 1em;
     text-align: center;
+    font-family: ;
 }
 
 #skill-levels dd:first-child h4 {
