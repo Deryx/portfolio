@@ -266,7 +266,6 @@ section div h1 {
     color: #FFF;
     font-size: 1em;
     text-align: center;
-    font-family: ;
 }
 
 #skill-levels dd:first-child h4 {
@@ -414,11 +413,11 @@ div.slide-buttons button {
     width: 150px;
     height: 150px;
     margin-left: 10px;
-    background: #0000FF;
+    background: #000;
     display: inline-block;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
 #contact i {
@@ -432,14 +431,14 @@ div.slide-buttons button {
     height: 100%;
     color: #FFF;
     text-decoration: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
 #contact a:hover {
     background: #FFF;
-    color: #0000FF;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 10px;
+    color: #000;
 }
 
 .hidden {
